@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Femmedia — Reporte Anual</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilos_pagina.css">
+
+  <style>
+    .resaltar-amarillo { color: var(--accent-color); font-weight: 800; }
+    .panel-violeta { background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 50%, #6b2d8f 100%); }
+    .bloque { padding: 4rem 0; }
+    .logos-aliados img { height: 40px; object-fit: contain; }
+
+    .tarjeta-blanca {
+      background: #ffffff;
+      color: #2c2b2a; 
+      border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+      border: 3px solid rgba(204,181,233,0.45);
+    }
+    .tarjeta-blanca .subtle {
+      color: #555;
+      font-weight: 600;
+    }
+
+    .dato-num {
+      font-size: clamp(2.6rem, 7vw, 4.6rem);
+      font-weight: 900;
+      color: var(--accent-color);
+      line-height: 1;
+    }
+
+    @media (max-width:768px){ .bloque { padding: 3rem 0; } }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Femmed<span class="highlight-i">i</span>a</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#publicaciones">Publicaciones</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ecuador">Ecuador</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="inicio" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center hero-content">
+        <div class="col-lg-7">
+          <h1 class="hero-title">REPORTE ANUAL</h1>
+          <p class="hero-subtitle">Agresiones en el mundo y el Ecuador — datos y hallazgos destacados.</p>
+          <a href="index.html#publicaciones" class="btn-hero">Volver a Publicaciones</a>
+        </div>
+        <div class="col-lg-5 text-center hero-illustration">
+          <div class="silhouette-border d-inline-block">
+            <i class="fas fa-file-alt" style="font-size: 10rem; color: white; opacity: 0.9;"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios" class="publications-section panel-violeta bloque text-white">
+    <div class="container">
+      <h2 class="section-title mb-4">Agresiones en el mundo y el Ecuador</h2>
+      <div class="row g-4 align-items-stretch">
+        <div class="col-12 col-lg-6">
+          <div class="tarjeta-blanca h-100">
+            <div class="p-3 p-lg-4">
+              <div class="ratio ratio-16x9 mb-3">
+                <img src="/Logos/ReporteAnual1.png"
+                  alt="Agresiones en el mundo y el Ecuador — RSF y Fundamedios"
+                  class="w-100 h-100 rounded border"
+                  style="object-fit: cover; border-color:#e9e6f3 !important;"
+                  loading="lazy">
+              </div>
+              <p class="subtle mb-0">Fuentes: RSF y Fundamedios</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="h-100 d-flex flex-column justify-content-between">
+            <div class="mb-4">
+              <h3 class="h4 resaltar-amarillo mb-3">Año 2024</h3>
+              <ul class="fs-5">
+                <li>54 periodistas asesinados</li>
+                <li>550 periodistas encarcelados</li>
+                <li>55 periodistas secuestrados</li>
+                <li>95 periodistas desaparecidos</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="h5 resaltar-amarillo mb-2">Mujeres periodistas</h4>
+              <ul class="fs-5 mb-0">
+                <li>14 periodistas asesinadas entre 2020 y 2021</li>
+                <li>73 periodistas encarceladas en 2023</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pt-4">
+        <div class="col-12">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="publicaciones" class="publications-section panel-violeta bloque text-white">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-12 col-lg-6">
+          <h3 class="h4 resaltar-amarillo mb-3">Año 2024 en Ecuador</h3>
+          <ul class="fs-5">
+            <li>194 agresiones</li>
+            <li>33 ataques verbales</li>
+            <li>29 amenazas</li>
+            <li>18 censuras</li>
+            <li>14 ataques físicos</li>
+            <li>14 restricciones al acceso a la información</li>
+            <li>8 exilios</li>
+          </ul>
+          <h4 class="h5 resaltar-amarillo mt-4 mb-2">Mujeres periodistas</h4>
+          <ul class="fs-5">
+            <li>45 agresiones a mujeres</li>
+            <li>Primer exilio fue Karol Noroña</li>
+            <li>6 mujeres periodistas exiliadas al 2023</li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="tarjeta-blanca h-100">
+            <div class="p-3 p-lg-4">
+              <div class="ratio ratio-16x9 mb-3">
+                <img src="/Logos/ReporteAnual2.png"
+                  alt="Periodistas asesinados en el mundo 2024"
+                  class="w-100 h-100 rounded border"
+                  style="object-fit: cover; border-color:#e9e6f3 !important;"
+                  loading="lazy">
+              </div>
+              <p class="subtle mb-0">Fuentes: RSF y Fundamedios</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center display-6 mt-4 mb-0 resaltar-amarillo">Ecuador ocupa el puesto 110</p>
+    </div>
+  </section>
+
+  <footer id="contacto" class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h3 class="footer-brand">Femmed<span class="highlight-i">i</span>a</h3>
+          <p class="footer-description">Femmedia es una iniciativa dedicada a mejorar la seguridad, visibilidad y condiciones laborales de las periodistas en Ecuador.</p>
+        </div>
+        <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
+          <h5 class="footer-heading">Menú</h5>
+          <ul class="footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Sobre nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#publicaciones">Publicaciones</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
+          <h5 class="footer-heading">Recursos</h5>
+          <ul class="footer-links">
+            <li><a href="#">Denuncias</a></li>
+            <li><a href="#">Protocolos de seguridad</a></li>
+            <li><a href="#">Mapas de riesgo</a></li>
+            <li><a href="#">Organizaciones aliadas</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <h5 class="footer-heading">Contáctanos</h5>
+          <form class="contact-form">
+            <input type="text" class="form-control mb-3" placeholder="Nombre">
+            <input type="email" class="form-control mb-3" placeholder="Correo Electrónico">
+            <textarea class="form-control mb-3" rows="3" placeholder="Mensaje..."></textarea>
+            <button type="submit" class="btn btn-contact w-100">Enviar</button>
+          </form>
+          <div class="social-links mt-4 text-center">
+            <a href="https://www.instagram.com/oime_ecuador?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/oimeecuador?s=21&t=16OqDF86fQGnDca4wfgOaQ" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.tiktok.com/@oime_ecuador?is_from_webapp=1&sender_device=pc" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-divider">
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="footer-copyright mb-0">© 2025 Femmedia - Todos Los Derechos Reservados</p>
+          <p class="footer-legal mb-0"><a href="#">Términos Y Condiciones</a> | <a href="#">Políticas De Privacidad</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        e.preventDefault();
+        const t=document.querySelector(a.getAttribute('href'));
+        if(t) t.scrollIntoView({behavior:'smooth',block:'start'});
+      });
+    });
+
+    document.querySelector('.contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('¡Gracias por tu mensaje! Te contactaremos pronto.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>

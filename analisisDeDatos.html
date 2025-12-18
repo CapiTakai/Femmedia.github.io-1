@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Datos - Femmedia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos_pagina.css">
+    <style>
+        .dato-box {
+            background: rgba(255,255,255,0.15);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border: 3px solid rgba(255,255,255,0.2);
+        }
+        .dato-num {
+            font-size: 4rem;
+            font-weight: 800;
+            color: #FBEF69;
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+
+        .dato-stat {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #FBEF69;
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+
+        .dato-text {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .highlight-yellow {
+            color: #FBEF69;
+            font-weight: 700;
+        }
+
+        li{
+            list-style: none;
+            margin-bottom: 1rem;
+        }
+
+        .texto_impacto{
+            font-size: 5rem;
+            font-weight: 800;
+            color: #FBEF69;
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Femmed<span class="highlight-i">i</span>a</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Publicaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#ecuador">Ecuador</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center hero-content">
+                <div class="col-lg-7">
+                    <h1 class="hero-title">ANÁLISIS DE DATOS</h1>
+                    <p class="hero-subtitle">Resultados de encuestas y hallazgos clave sobre condiciones laborales, seguridad y discriminación en el periodismo ecuatoriano</p>
+                    <a href="index.html#publicaciones" class="btn-hero">Volver a Publicaciones</a>
+                </div>
+                <div class="col-lg-5 text-center hero-illustration">
+                    <div class="silhouette-border d-inline-block">
+                        <i class="fas fa-chart-line" style="font-size: 10rem; color: white; opacity: 0.9;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="publications-section" style="background: linear-gradient(135deg, #9F20C4 0%, #CB6CE6 100%); color: white; padding: 6rem 0;">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">DATOS PRINCIPALES DE LA ENCUESTA</h2>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.9);">De 168 mujeres periodistas encuestadas en Ecuador</p>
+            
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="dato-box">
+                        <div class="dato-num">55%</div>
+                        <p class="dato-text mb-0">está ejerciendo la profesión <strong>sin relación de dependencia</strong>.</p>
+                    </div>
+                    <div class="dato-box">
+                        <div class="dato-num">44%</div>
+                        <p class="dato-text mb-0">reporta que las agresiones/amenazas fueron <strong>presenciales</strong>, el <strong>40%</strong> en <strong>medios digitales</strong>, y el <strong>16%</strong> en ambas modalidades.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card-custom" style="background: linear-gradient(135deg, rgba(204, 181, 233, 0.35) 0%, rgba(204, 181, 233, 0.15) 100%); border-left: 6px solid #FBEF69;">
+                        <p class="lead mb-3"><strong>De 168 mujeres periodistas encuestadas</strong>,</p>
+                        <p class="lead mb-3"><span class="highlight-yellow">solo una</span> cuenta con un servicio de atención en <strong>salud mental</strong> proporcionado por la empresa donde labora.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="publications-section" style="background: linear-gradient(135deg, #8e44ad 0%, #6b2d8f 100%); color: white; padding: 6rem 0;">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">VIOLENCIA Y ACOSO</h2>
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <div class="dato-box">
+                        <div class="dato-num">55%</div>
+                        <p class="dato-text mb-0">de mujeres periodistas encuestadas sufrió <strong>agresiones, amenazas o acoso de manera presencial</strong>.</p>
+                    </div>
+                    <div class="dato-box">
+                        <div class="dato-num">33%</div>
+                        <p class="dato-text mb-0">ha vivido ataques, amenazas o acoso <strong>sobre su cuerpo y vida sexual</strong> en el marco de su labor periodística.</p>
+                    </div>
+                    <p class="mt-4 fs-5">Estos ataques se han vivido de manera <strong>presencial</strong>, <strong>digital</strong>, o <strong>de ambas maneras a la vez</strong>.</p>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <i class="fas fa-exclamation-triangle" style="font-size: 12rem; color: #FBEF69; opacity: 0.8;"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="publications-section" style="background: linear-gradient(135deg, #6b2d8f 0%, #9F20C4 100%); color: white; padding: 6rem 0;">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">REPRESENTATIVIDAD Y DISCRIMINACIÓN</h2>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="dato-box">
+                        <div class="dato-num">76%</div>
+                        <p class="dato-text mb-0">de las periodistas encuestadas <strong>no han accedido</strong> a directivas en gremios tradicionales.</p>
+                        <p class="dato-text mt-2 mb-0">Entre quienes sí han accedido, <strong>28%</strong> tuvo alguna dificultad relacionada con <strong>edad, género o etnia</strong>.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="dato-box">
+                        <div class="dato-num">58%</div>
+                        <p class="dato-text mb-0">ha vivido algún tipo de <strong>discriminación al acceder a un trabajo</strong>.</p>
+                        <p class="dato-text mt-2 mb-0">Del porcentaje, <span class="highlight-yellow">53%</span> lo atribuye al <strong>género</strong>, cruzado con <strong>edad</strong>, <strong>etnia/raza</strong>, <strong>clase social</strong>, <strong>diversidad</strong>, <strong>discapacidad</strong>, <strong>maternidad</strong>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="publications-section" style="background: linear-gradient(135deg, #CB6CE6 0%, #E63471 100%); color: white; padding: 6rem 0;">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">MATERNIDAD Y PERIODISMO</h2>
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6 text-center">
+                    <i class="fas fa-person-pregnant" style="font-size: 12rem; color: #FBEF69; opacity: 0.8;"></i>
+                </div>
+                <div class="col-lg-6">
+                    <div class="dato-box">
+                        <div class="dato-num">14%</div>
+                        <p class="dato-text mb-0">de las <strong>mujeres madres periodistas</strong> consultadas ha tenido alguna <strong>dificultad</strong> en el ejercicio profesional por su condición de <strong>embarazo</strong>, <strong>parto</strong>, <strong>lactancia</strong> y <strong>postparto</strong>.</p>
+                    </div>
+                    <div class="dato-box">
+                        <div class="dato-num">43%</div>
+                        <p class="dato-text mb-0">ha sufrido <strong>acoso laboral</strong> para que renuncie o por despido.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="publications-section" style="background: linear-gradient(135deg, #9F20C4 0%, #CB6CE6 100%); color: white; padding: 6rem 0;">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">DATOS POR PROVINCIA</h2>            
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="dato-box">
+                        <div class="dato-num">462</div>
+                        <p class="dato-text mb-0">alertas registradas en <strong>Pichincha</strong>.</p>
+                        <br>
+                        <a href="testimonios.html#pichincha" class="btn-publication">ENTREVISTAS</a>
+                    </div>
+                    <div class="dato-box">
+                        <div class="dato-num">204</div>
+                        <p class="dato-text mb-0">alertas registradas en <strong>Guayas</strong>.</p>
+
+                        <br>
+                        <a href="testimonios.html#guayaquil" class="btn-publication">ENTREVISTAS</a>
+                    </div>
+                    <div class="dato-box">
+                        <div class="dato-num">42</div>
+                        <p class="dato-text mb-0">alertas registradas en <strong>Bolívar</strong>.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card-custom" style="background: linear-gradient(135deg, rgba(204, 181, 233, 0.35) 0%, rgba(204, 181, 233, 0.15) 100%); border-left: 6px solid #FBEF69;">
+                        <h3 class="section-title" style="color: #FBEF69;">¿Cuáles son las provincias con mayor número de <strong>alertas</strong> registradas?</h3> 
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="publications-section" style="background: linear-gradient(135deg, #8e44ad 0%, #6b2d8f 100%); color: white; padding: 6rem 0;">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card-custom" style="background: linear-gradient(135deg, rgba(204, 181, 233, 0.35) 0%, rgba(204, 181, 233, 0.15) 100%); border-left: 6px solid #FBEF69;">
+                        <h1 class="texto_impacto" style="color: #FBEF69;">Se han registrado un total de casi mil alertas!</h1> 
+                    </div>
+                    
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="dato-box">
+                        <ul class="fs-5">
+                            <li>Azuay <strong class="dato-stat">11 alertas</strong> </li>
+                            <li>Cañar <strong class="dato-stat">5 alertas</strong> </li>
+                            <li>Carchi <strong class="dato-stat">1 alerta</strong></li>
+                            <li>Chimborazo <strong class="dato-stat">30 alertas</strong></li>
+                            <li>Cotopaxi <strong class="dato-stat">22 alertas</strong></li>
+                            <li>El Oro <strong class="dato-stat">14 alertas</strong></li>
+                            <li>Esmeraldas <strong class="dato-stat">12 alertas</strong></li>
+                            <li>Imbabura <strong class="dato-stat">9 alertas</strong></li>
+                            <li>Loja <strong class="dato-stat">28 alertas</strong></li>
+                            <li>Los Ríos <strong class="dato-stat">22 alertas</strong></li>
+                            <li>Manabí <strong class="dato-stat">22 alertas</strong></li>
+                            <li>Morona Santiago <strong class="dato-stat">23 alertas</strong></li>
+                            <li>Napo <strong class="dato-stat">7 alertas</strong></li>
+                            <li>Pastaza <strong class="dato-stat">20 alertas</strong></li>
+                            <li>Santo Domingo <strong class="dato-stat">8 alertas</strong></li>
+                            <li>Sucumbíos <strong class="dato-stat">16 alertas</strong></li>
+                            <li>Tungurahua <strong class="dato-stat">31 alertas</strong></li>
+                            <li>Zamora <strong class="dato-stat">3 alertas</strong></li>
+                            <li>No Identificados <strong class="dato-stat">2 alertas</strong></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container text-center">
+            <h2 class="section-title">METODOLOGÍA</h2>
+            <p class="lead mb-4">Estos datos provienen de una encuesta realizada a 168 periodistas mujeres en Ecuador durante 2024</p>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="card-custom">
+                        <div class="card-icon"><i class="fas fa-clipboard-list"></i></div>
+                        <h4 class="card-title">168</h4>
+                        <p class="card-text">Periodistas encuestadas</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-custom">
+                        <div class="card-icon"><i class="fas fa-map-marked-alt"></i></div>
+                        <h4 class="card-title">23</h4>
+                        <p class="card-text">Provincias de Ecuador</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-custom">
+                        <div class="card-icon"><i class="fas fa-calendar-alt"></i></div>
+                        <h4 class="card-title">2024</h4>
+                        <p class="card-text">Año de recolección</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Colaboradores -->
+    <section class="collaborators-section">
+        <div class="container">
+            <h2 class="section-title">NUESTROS COLABORADORES</h2>
+            <p class="section-subtitle">Organizaciones que apoyan esta investigación</p>
+            <div class="logos-carousel">
+                <div class="logos-track">
+                    <div class="logo-item"><img src="Logos/Logo IPDC.png" alt="IPDC"></div>
+                    <div class="logo-item"><img src="Logos/Logo largo positivo.png" alt="Periodismo USFQ"></div>
+                    <div class="logo-item"><img src="Logos/Logo UNESCO.png" alt="UNESCO"></div>
+                    <div class="logo-item"><img src="Logos/Logo USFQ Blanco.png" alt="USFQ" style="background: #9F20C4; padding: 1rem;"></div>
+                    <div class="logo-item"><img src="Logos/Logo IPDC.png" alt="IPDC"></div>
+                    <div class="logo-item"><img src="Logos/Logo largo positivo.png" alt="Periodismo USFQ"></div>
+                    <div class="logo-item"><img src="Logos/Logo UNESCO.png" alt="UNESCO"></div>
+                    <div class="logo-item"><img src="Logos/Logo USFQ Blanco.png" alt="USFQ" style="background: #9F20C4; padding: 1rem;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="footer-brand">Femmed<span class="highlight-i">i</span>a</h3>
+                    <p class="footer-description">Femmedia es una iniciativa dedicada a mejorar la seguridad, visibilidad y condiciones laborales de las periodistas en Ecuador.</p>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
+                    <h5 class="footer-heading">Menú</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="index.html#servicios">Servicios</a></li>
+                        <li><a href="index.html#publicaciones">Publicaciones</a></li>
+                        <li><a href="index.html#ecuador">Ecuador</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
+                    <h5 class="footer-heading">Recursos</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Denuncias</a></li>
+                        <li><a href="#">Protocolos de seguridad</a></li>
+                        <li><a href="#">Mapas de riesgo</a></li>
+                        <li><a href="#">Organizaciones aliadas</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="footer-heading">Contáctanos</h5>
+                    <form class="contact-form">
+                        <input type="text" class="form-control mb-3" placeholder="Nombre" required>
+                        <input type="email" class="form-control mb-3" placeholder="Correo Electrónico" required>
+                        <textarea class="form-control mb-3" rows="3" placeholder="Mensaje..." required></textarea>
+                        <button type="submit" class="btn btn-contact w-100">Enviar</button>
+                    </form>
+                    <div class="social-links mt-4 text-center">
+                        <a href="https://www.instagram.com/oime_ecuador" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/oimeecuador" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.tiktok.com/@oime_ecuador" class="social-icon" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="footer-copyright mb-0">© 2025 Femmedia - Todos Los Derechos Reservados</p>
+                    <p class="footer-legal mb-0"><a href="#">Términos Y Condiciones</a> | <a href="#">Políticas De Privacidad</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Gracias por tu mensaje! Te contactaremos pronto.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
